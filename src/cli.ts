@@ -7,15 +7,19 @@ const main = () => {
 	const program = new Command()
 	program
 		.arguments('<PHRASE>')
-		.description('Something Sean would say')
+		.description('Shomething Shawn would shay')
+		.option(
+			'-p, --pedantic',
+			'If "Sean" is "Shawn" then "Sea" should be "Shaw"!',
+			false
+		)
 		.action(shawnAction)
 	program.parse(process.argv)
 }
 
-const shawnAction = (phrase: string): string|null => {
-	const rephrasing = rephrase(phrase)
-	if (rephrasing) { console.log(rephrasing) }
-
+const shawnAction = (phrase: string, cmd: Command): string => {
+	const rephrasing = rephrase(phrase, cmd.pedantic)
+	console.log(rephrasing)
 	return rephrasing
 }
 
