@@ -4,8 +4,8 @@ const rephrase = (
 	pedantic: boolean = false
 ): string => {
 	let rephrasing = phrase
-		.replace(/([sS])(?![hA-Z]|e\b)/g, '$1h')
-		.replace(/([sS])e(?=\b)/g, '$1h')
+		.replace(/([sS])(?:[sS]*)(?![hA-Z]|e\b)/g, '$1h')
+		.replace(/([sS])(?:[sS]*)e(?=\b)/g, '$1h')
 
 	if (pedantic) {
 		rephrasing = rephrasing.replace(/(?<=[sS]h)ea/g, 'aw')
