@@ -2,7 +2,7 @@
 Telefactor: Shawn - Reference implementation
 
 Sean Connery, why don't you pick?
-https://youtu.be/8Zq3KCBed5Q?list=PLZfSCeE5MuigMa2Ahyd3pckdHCIuzJDFH&t=243
+<https://youtu.be/8Zq3KCBed5Q?list=PLZfSCeE5MuigMa2Ahyd3pckdHCIuzJDFH&t=243>
 
 ## What do I do?
 
@@ -21,7 +21,7 @@ Well, you're either a _examiner_ or an _sourcerer_.
 If you're an examiner then the `src/` directory should have a bunch of code in `.ts` files.
 The `.test.ts` files, on the other hand, should be just about empty.
 
-It's up to you to write tests in at at least one file (`src/shawn.test.ts`) to validate
+It's up to you to write tests in at least one file (`src/shawn.test.ts`) to validate
 the behavior of the logic in `src/shawn.ts`.
 
 Depending how confident you are with the implementation and your understanding
